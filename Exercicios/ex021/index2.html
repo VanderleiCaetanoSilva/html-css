@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grouping Tags</title>
+   <style>
+       header {
+           font-family: 'Times New Roman', Times, serif;
+           background-color: blanchedalmond;
+           padding: 10px;
+           
+       }
+       nav > a {
+           margin-right: 20px;
+       }
+       nav > a:hover {
+           text-decoration: none;
+           color: brown;
+       }
+       body {
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: lightgray;
+       }
+       main {
+           background-color: white;
+       }
+       footer {
+        font-family: 'Times New Roman', Times, serif;
+        
+        background-color: blanchedalmond;
+        padding: 2px;
+       }
+       footer > p {
+           text-align: right;
+           font-size: 0.8em;
+           margin: 0px;
+       }
+       section {
+           padding: 6px;
+       }
+       article {
+           background-color: antiquewhite;
+           box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.255);
+           border-radius: 10px;
+       }
+       article > p {
+            margin: 10px;
+       } 
+       article > aside {
+           color: red;
+           text-align: right;
+           margin: 6px;
+       }
+   </style>
+</head>
+<body>
+<Header>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</Header>
+<Main>
+    <section id="Assuntos">
+        <h1>Assuntos</h1>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus laudantium maiores quisquam exercitationem? Architecto, esse dolores deserunt, quos nam laudantium temporibus hic distinctio veritatis reiciendis ullam eos illum eveniet!</p>
+            <aside>
+                <p>Noticia por Ciclano de Tal</p>
+            </aside>
+        </article>
+    </section>
+    <section id="Noticias">
+        <h1>Noticias</h1>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum vitae mollitia nostrum facilis, quas, odio necessitatibus labore, provident neque unde corporis ducimus facere accusamus hic error? Assumenda sunt aut repellendus?</p>
+            <aside>
+                <p>Noticia por Fulano de Tal</p>
+            </aside>
+        </article>
+    </section>
+</Main>
+<Footer>
+    <p>Desenvolvido por Curso em Video</p>
+</Footer>
+</body>
+</html>
