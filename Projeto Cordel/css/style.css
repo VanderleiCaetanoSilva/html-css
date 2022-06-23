@@ -16,173 +16,81 @@
     --fonte-padrao: 'Kalam', cursive;
 }
 
-/*
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.link::after {
-    font-size: 0.8em;
-    content: " ⋐⋑";
-}
-
-body {
-    background-color: var(--cor0);
-    font-family: var(--fonte-padrao);
-}
-*/
 header {
     background-size: cover;
     background-image: url("../imagens/cordel.jpg");
-    background-repeat: no-repeat;
-    height: 250px;
+    background-position: center top;
+    color: var(--cor0);
 }
 
 header > h1 {
     margin: auto;
-    padding-top: 70px;
-    font-size: 3em;
-    color: var(--cor0);
+    padding-top: 60px;
+    font-size: 6vw; 
     text-align: center;
 }
 
 header > p {
     padding-top: 0px;
+    padding-bottom: 60px;
     text-align: center;
-    font-size: 1em;
+    font-size: 2.5vw;
     margin: 0px;
 }
+
 header > p > a {
-    text-decoration: none;
     color: var(--cor0);
-}
-
-/*
-header > p {
-    color: white;
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    max-width: 500px;
-    margin: auto;    
-    padding-right: 10px;
-    padding-left: 10px;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.400);
-    padding-bottom: 20px;
-}
-*/
-main {
-    width: 100%vh;
-    background-color: var(--cor0);
-}
-
-main article {
-    font-size: 3em;
-    font-weight: normal;
-    color: var(--cor5);
-    font-family: var(--fonte-padrao);
-}
-
-main section {
-    padding: 40px 0px 40px 0px;
-}
-
-section#dois {
-    position: relative;
-    background-size: cover;
-    background-image: url("../imagens/background001.jpg");
-}
-
-section#dois > article {
-    color: var(--cor0);
-}
-
-section#cinco {
-    background-size: 100%vh;
-    background-image: url("../imagens/background002.jpg");
-    color: var(--cor5);
-}
-
-article {
-    margin: 0px 20px 0px 20px;
-}
-/*
-div.video {
-    position: relative;
-    background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 56.5%;
-}
-
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-
-}
-
-main img {
-    width: 100%;
-}
-
-main img.pequena {
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
-
-
-main h2 {
-    color: var(--cor3);
-    font-weight: normal;
-    font-family: var(--fonte-android);
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, transparent, var(--cor1));
-    text-indent: 10px;
-}
-
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-}
-
-main a {
     text-decoration: none;
-    font-weight: bold;
-    color: var(--cor5);
 }
 
-main a:hover {
+header  > a:hover {
     text-decoration: underline;
 }
 
-aside {
-    background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300);
+main, body {
+    min-height: 100%vh;
+    background-color: var(--cor0);
 }
 
-aside > h3 {
+main > section {
+    font-size: 4.5vw;
     font-weight: normal;
-    background-color: var(--cor5);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
+    color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    padding: 5vh 20px 5vh 20px;
+    line-height: 2em;
 }
 
-aside > ul {
-    list-style-type: "✔️ ";
-    list-style-position: inside;
-    columns: 2;
+section#dois {
+    color: var(--cor0);
+    background-position: right center;
+    background-size: cover; 
+    background-image: url("../imagens/background001.jpg");
+    box-shadow: inset 0px 6px 13px 0px rgba(0, 0, 0, 0.509);
+    background-attachment: fixed;
 }
-*/
+
+section#dois > p {
+    display:inline-block;
+    background-color: rgba(64, 64, 64, 0.602);
+    padding: 7px;
+}
+
+section#quatro {
+    color: var(--cor0);
+    background-position: right center;
+    background-size: cover; 
+    background-image: url("../imagens/background002.jpg");
+    box-shadow: inset 0px 6px 13px 0px rgba(0, 0, 0, 0.509);
+    background-attachment: fixed;
+}
+
+section#quatro > p {
+    display:inline-block;
+    background-color: rgba(64, 64, 64, 0.602);
+    padding: 7px;
+} 
+   
 footer { 
     background-image: linear-gradient(to right, var(--cor2), var(--cor1));
     min-height: 30px;
@@ -191,7 +99,7 @@ footer {
     font-size: 0.8em;
 }
 
-footer p {
+footer > p {
     margin: 5px;
     padding: 7px;
     text-decoration: none;   
