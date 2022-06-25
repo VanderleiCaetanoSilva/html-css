@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: lightgrey;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: top; /* Alinhamento Vertical */
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Celulas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Coluna A</th>
+                <th scope="col">Coluna B</th>
+                <th scope="col">Coluna C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td colspan="2">B1</td>
+
+            </tr>
+            <tr>
+                <td rowspan="3">A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>B3</td>
+                <td rowspan="2">C3</td>
+            </tr>
+            <tr>
+                <td>B4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
