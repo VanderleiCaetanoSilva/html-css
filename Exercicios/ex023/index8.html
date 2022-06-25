@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            height: 100px;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: lightgrey;
+        }
+
+        tbody td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(160, 209, 193);
+        }
+
+        col.csexo {
+            border: 3px solid brown;
+            font-weight: bold;
+            background-color: lightsalmon        
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>José Almeida</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Padeiro</td>
+            </tr>
+            <tr>
+                <td>Clara Nunes</td>
+                <td>F</td>
+                <td>54</td>
+                <td>Psicologa</td>
+            </tr>
+            <tr>
+                <td>João Telles</td>
+                <td>M</td>
+                <td>43</td>
+                <td>Dentista</td>
+            </tr>
+            <tr>
+                <td>Ana Lucia</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Programadora</td>
+            </tr>
+        </table>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        thead th {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: lightgrey;
+        }
+
+        tbody td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(160, 209, 193);
+        }
+
+        col.c_produto {
+            width: 200px;
+        }
+
+        col.c_nov {
+            border: 3px solid brown;
+       }
+
+       div#countainer {
+            overflow-x: auto;
+       }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <div id="countainer">
+        <table>
+            <colgroup>
+                <col class="c_produto">
+                <col class="c_jan">
+                <col class="c_fev">
+                <col class="c_mar">
+                <col class="c_abr">
+                <col class="c_mai">
+                <col class="c_jun">
+                <col class="c_jul">
+                <col class="c_ago">
+                <col class="c_set">
+                <col class="c_out">
+                <col class="c_nov">
+                <col class="c_dez">
+            </colgroup>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+        <!--            <tr>
+                    <th rowspan="2" scope="col">Produto</th>
+                    <th colspan="12">Resultado Mensal</th>
+                </tr>   -->
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 5</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 6</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Produto 7</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>9</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
