@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iusu">Usuário :</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="30"
+                    placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imail">Email : </label>
+                <input type="email" name="mail" id="imail" required placeholder="Digite seu e-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Celular : </label>
+                <input type="tel" name="tel" id="itel" required placeholder="(99) 9999-9999"
+                    pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" autocomplete="mobile">
+            </p>
+        </fieldset>
+        <!-- Verificar sobre RegEx -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado :</label>
+            <select name="iest" id="iest">
+                <option value="" selected>--- Escolha o Estado---</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Parana</option>
+                </optgroup>        
+            </select>    
+        </p>
+        <p>
+            <label for="ipro">Profissão :</label>
+            <input type="text" name="pro" id="ipro" list="profissao">
+            <datalist id="profissao">
+                <option value="Professor"></option>
+                <option value="Médico"></option>
+                <option value="Engenheiro"></option>
+                <option value="Analista"></option>
+                <option value="Dentista"></option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imen">Mensagem :</label> <br>
+            <textarea name="men" id="imen" cols="50" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </p>
+        <p>    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
