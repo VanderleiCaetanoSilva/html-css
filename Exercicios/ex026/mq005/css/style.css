@@ -42,7 +42,7 @@ menu > ul > li > a {
     background-color: rgb(250, 250, 183);
     color: brown;
     text-align: center;
-    border-top: 2px solid gray;
+    border: 1px solid gray;
 }
 
 menu > ul > li > a:hover {
