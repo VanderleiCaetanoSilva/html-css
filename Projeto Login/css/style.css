@@ -37,7 +37,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
     background-color: #ffffff;
     width: 250px;
     height: 450px;
@@ -45,6 +45,7 @@ section#login {
     overflow: hidden;
     box-shadow: 0px 0px 10px #000000;
 
+    transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
 }
